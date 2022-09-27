@@ -2,197 +2,224 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* estilos del header */
 .contenedor-animacion-menu {
   animation-name: animacion-menu;
   animation-duration: 2.5s;
-  animation-iteration-count: initial; }
+  animation-iteration-count: initial;
+}
 
 header {
-  background-color: #7FB77E; }
-  header h1 {
-    text-align: center;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 0;
-    color: #212121; }
-  header h2 {
-    text-align: center;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #212121; }
+  background-color: #7fb77e;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+  color: #212121;
+}
+
+header h2 {
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #212121;
+}
 
 /* estilos del nav */
 .menu {
   padding: auto;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 /* estilos del body */
 body {
-  background-color: #F7F6DC; }
+  background-color: #f7f6dc;
+}
 
 /* estilos del main */
 .main-index {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem; }
-  .main-index img {
-    width: 60%;
-    animation-name: foto-aparece;
-    animation-duration: 1s;
-    animation-iteration-count: initial; }
-  .main-index p {
-    margin-top: 3rem;
-    background-color: #B1D7B4;
-    margin: 1rem 2rem 1rem 2rem;
-    border-radius: 10px;
-    margin-bottom: 5rem;
-    animation-name: foto-aparece;
-    animation-duration: 2s;
-    animation-iteration-count: initial; }
+  font-size: 0.9rem;
+}
+
+.main-index img {
+  width: 60%;
+  animation-name: foto-aparece;
+  animation-duration: 1s;
+  animation-iteration-count: initial;
+}
+
+.main-index p {
+  background-color: #b1d7b4;
+  margin: 3rem 2rem 5rem;
+  border-radius: 10px;
+  animation-name: foto-aparece;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
 
 /* estilos del footer */
 footer {
-  background-color: #7FB77E;
+  background-color: #7fb77e;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.8rem;
   margin-top: 0.8rem;
-  margin-bottom: 0rem;
   animation-name: animacion-footer-aparece;
   animation-duration: 2.5s;
-  animation-iteration-count: initial; }
-  footer div {
-    display: flex;
-    flex-direction: row; }
-  footer img {
-    margin-bottom: 0.5rem;
-    filter: drop-shadow(1px 4px 3px);
-    animation-name: animacion-footer;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    padding-inline: 0.5rem;
-    margin-bottom: 0.7rem; }
-  footer .animacion-giro {
-    animation-name: animacion-footer-giro;
-    animation-duration: 1.2s;
-    animation-iteration-count: initial; }
-  footer p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
-    color: #212121;
-    margin-bottom: 0; }
+  animation-iteration-count: initial;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+}
+
+footer img {
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(1px 4px 3px);
+  animation-name: animacion-footer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  padding-inline: 0.5rem;
+}
+
+footer .animacion-giro {
+  animation-name: animacion-footer-giro;
+  animation-duration: 1.2s;
+  animation-iteration-count: initial;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: #212121;
+  margin-bottom: 0;
+}
 
 /* estilos de nosotros */
 .main-nosotros {
   text-align: center;
-  margin-top: 2rem; }
-  .main-nosotros h2 {
-    display: inline;
-    margin-top: 3.2rem;
-    margin-bottom: 3.2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    background-color: #B1D7B4;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border-radius: 30px;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    animation-name: foto-aparece;
-    animation-duration: 1.4s;
-    animation-iteration-count: initial; }
-  .main-nosotros p {
-    margin-top: 3rem;
-    background-color: #B1D7B4;
-    margin: 1rem 2rem 1rem 2rem;
-    border-radius: 10px;
-    animation-name: foto-aparece;
-    animation-duration: 2s;
-    animation-iteration-count: initial; }
-  .main-nosotros div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px; }
-    .main-nosotros div img {
-      width: 70%;
-      height: 70%;
-      border-radius: 30px;
-      animation-name: foto-aparece;
-      animation-duration: 3s;
-      animation-iteration-count: initial; }
+  margin-top: 2rem;
+}
+
+.main-nosotros h2 {
+  display: inline;
+  margin: 3.2rem 3rem;
+  background-color: #b1d7b4;
+  border-radius: 30px;
+  padding: 0.3rem 0.5rem;
+  animation-name: foto-aparece;
+  animation-duration: 1.4s;
+  animation-iteration-count: initial;
+}
+
+.main-nosotros p {
+  background-color: #b1d7b4;
+  margin: 1rem 2rem;
+  border-radius: 10px;
+  animation-name: foto-aparece;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+
+.main-nosotros div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.main-nosotros div img {
+  width: 70%;
+  height: 70%;
+  border-radius: 30px;
+  animation-name: foto-aparece;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+}
 
 /* estilos de productos */
 .main-productos {
-  text-align: center; }
-  .main-productos section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    gap: 5px; }
-    .main-productos section h2 {
-      display: inline;
-      margin-top: 3.2rem;
-      margin-bottom: 3.2rem;
-      margin-left: 5rem;
-      margin-right: 5rem;
-      background-color: #B1D7B4;
-      padding-left: 0.2rem;
-      padding-right: 0.2rem;
-      border-radius: 30px;
-      padding-top: 0.3rem;
-      padding-bottom: 0.3rem;
-      animation-name: foto-aparece;
-      animation-duration: 1.2s;
-      animation-iteration-count: initial; }
-    .main-productos section .productos-suplementos {
-      background-color: #B1D7B4;
-      margin: 1rem 2rem 1rem 2rem;
-      border-radius: 30px;
-      animation-name: foto-aparece;
-      animation-duration: 2s;
-      animation-iteration-count: initial; }
-    .main-productos section .productos-frutos {
-      background-color: #B1D7B4;
-      margin: 1rem 2rem 1rem 2rem;
-      border-radius: 30px;
-      animation-name: foto-aparece;
-      animation-duration: 2s;
-      animation-iteration-count: initial; }
-    .main-productos section .productos-harinas {
-      background-color: #B1D7B4;
-      margin: 1rem 2rem 1rem 2rem;
-      border-radius: 30px;
-      animation-name: foto-aparece;
-      animation-duration: 2s;
-      animation-iteration-count: initial; }
-    .main-productos section .productos-hierbas {
-      background-color: #B1D7B4;
-      margin: 1rem 2rem 1rem 2rem;
-      border-radius: 30px;
-      animation-name: foto-aparece;
-      animation-duration: 2s;
-      animation-iteration-count: initial; }
-    .main-productos section img {
-      width: 40%;
-      height: 40%;
-      animation-name: foto-aparece;
-      animation-duration: 1s;
-      animation-iteration-count: initial;
-      border-radius: 15px; }
+  text-align: center;
+}
 
-body {
-  background-color: #F7F6DC; }
+.main-productos section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  gap: 5px;
+}
+
+.main-productos section h2 {
+  display: inline;
+  margin: 3.2rem 5rem;
+  background-color: #b1d7b4;
+  border-radius: 30px;
+  padding: 0.3rem 0.2rem;
+  animation-name: foto-aparece;
+  animation-duration: 1.2s;
+  animation-iteration-count: initial;
+}
+
+.main-productos section .productos-suplementos {
+  background-color: #b1d7b4;
+  margin: 1rem 2rem;
+  border-radius: 30px;
+  animation-name: foto-aparece;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+
+.main-productos section .productos-frutos {
+  background-color: #b1d7b4;
+  margin: 1rem 2rem;
+  border-radius: 30px;
+  animation-name: foto-aparece;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+
+.main-productos section .productos-harinas {
+  background-color: #b1d7b4;
+  margin: 1rem 2rem;
+  border-radius: 30px;
+  animation-name: foto-aparece;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+
+.main-productos section .productos-hierbas {
+  background-color: #b1d7b4;
+  margin: 1rem 2rem;
+  border-radius: 30px;
+  animation-name: foto-aparece;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+
+.main-productos section img {
+  width: 40%;
+  height: 40%;
+  animation-name: foto-aparece;
+  animation-duration: 1s;
+  animation-iteration-count: initial;
+  border-radius: 15px;
+}
 
 .main-encontranos section {
   margin-top: 1rem;
@@ -201,188 +228,226 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px; }
-  .main-encontranos section h2 {
-    display: inline;
-    margin-top: 3.2rem;
-    margin-bottom: 3.2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    background-color: #B1D7B4;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border-radius: 30px;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    animation-name: foto-aparece;
-    animation-duration: 1s;
-    animation-iteration-count: initial; }
-  .main-encontranos section div iframe {
-    outline-style: auto;
-    width: 100%;
-    height: 25rem;
-    border-radius: 50px;
-    animation-name: foto-aparece;
-    animation-duration: 2s;
-    animation-iteration-count: initial; }
+  gap: 5px;
+}
 
-body {
-  background-color: #F7F6DC; }
+.main-encontranos section h2 {
+  display: inline;
+  margin: 3.2rem 3rem;
+  background-color: #b1d7b4;
+  padding: 0.3rem 0.5rem;
+  border-radius: 30px;
+  animation-name: foto-aparece;
+  animation-duration: 1s;
+  animation-iteration-count: initial;
+}
+
+.main-encontranos section div iframe {
+  outline-style: auto;
+  width: 100%;
+  height: 25rem;
+  border-radius: 50px;
+  animation-name: foto-aparece;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
 
 .main-contacto {
   text-align: center;
-  width: 100%; }
-  .main-contacto section {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px; }
-    .main-contacto section h2 {
-      display: inline;
-      margin-top: 3.2rem;
-      margin-bottom: 3.2rem;
-      margin-left: 3rem;
-      margin-right: 3rem;
-      background-color: #B1D7B4;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      border-radius: 30px;
-      padding-top: 0.3rem;
-      padding-bottom: 0.3rem;
-      animation-name: foto-aparece;
-      animation-duration: 1.4s;
-      animation-iteration-count: initial; }
-    .main-contacto section img {
-      width: 60%;
-      animation-name: foto-aparece;
-      animation-duration: 1s;
-      animation-iteration-count: initial;
-      animation-name: foto-aparece;
-      animation-duration: 1.4s;
-      animation-iteration-count: initial; }
-    .main-contacto section p {
-      animation-name: foto-aparece;
-      animation-duration: 1s;
-      animation-iteration-count: initial; }
-    .main-contacto section form {
-      outline-style: auto;
-      border-radius: 30px;
-      padding: 1.5rem;
-      animation-name: foto-aparece;
-      animation-duration: 2s;
-      animation-iteration-count: initial;
-      background-color: #B1D7B4; }
-      .main-contacto section form button {
-        outline-style: auto;
-        border-radius: 15px;
-        padding: 0.3rem;
-        background-color: #B1D7B4; }
+  width: 100%;
+}
+
+.main-contacto section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.main-contacto section h2 {
+  display: inline;
+  margin: 3.2rem 3rem;
+  background-color: #b1d7b4;
+  padding: 0.3rem 0.5rem;
+  border-radius: 30px;
+  animation-name: foto-aparece;
+  animation-duration: 1.4s;
+  animation-iteration-count: initial;
+}
+
+.main-contacto section img {
+  width: 60%;
+  animation-name: foto-aparece;
+  animation-duration: 1s;
+  animation-iteration-count: initial;
+}
+
+.main-contacto section p {
+  animation-name: foto-aparece;
+  animation-duration: 1s;
+  animation-iteration-count: initial;
+}
+
+.main-contacto section form {
+  outline-style: auto;
+  border-radius: 30px;
+  padding: 1.5rem;
+  animation-name: foto-aparece;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+  background-color: #b1d7b4;
+}
+
+.main-contacto section form button {
+  outline-style: auto;
+  border-radius: 15px;
+  padding: 0.3rem;
+  background-color: #b1d7b4;
+}
 
 /* media queries mobile first */
 @media (min-width: 768px) {
   /* estilos del nav */
   .nav-item:hover {
-    background-color: #B1D7B4;
+    background-color: #b1d7b4;
     transform: scale(0.9);
     box-shadow: 1px 1px 3px black;
     padding: 0.05rem;
-    border-radius: 3px; }
+    border-radius: 3px;
+  }
+
   /* estilos del index */
   .main-index img {
-    width: 32rem; }
+    width: 32rem;
+  }
+
+  .main-index p {
+    font-size: 1.2rem;
+  }
+
   /* mq nosotros */
   .main-nosotros div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5px; }
-    .main-nosotros div img {
-      width: 40%;
-      height: 40%; }
-  /*mq productos*/
+    gap: 5px;
+  }
+
+  .main-nosotros p {
+    font-size: 1.2rem;
+  }
+
+  .main-nosotros div img {
+    width: 40%;
+    height: 40%;
+  }
+
+  /* mq productos */
   .main-productos {
-    text-align: center; }
-    .main-productos section {
-      display: grid;
-      grid-template-columns: repeat(2, 2fr);
-      grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
-      grid-template-areas: "titulo titulo" "suplementos frutos" "harinas hierbas";
-      justify-content: center;
-      align-items: center;
-      gap: 5px; }
-      .main-productos section h2 {
-        grid-area: titulo;
-        background-color: #B1D7B4;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 12rem;
-        padding-right: 12rem;
-        border-radius: 30px; }
-      .main-productos section .productos-suplementos {
-        grid-area: suplementos;
-        background-color: #B1D7B4;
-        margin: 1rem 2rem 4rem 6rem;
-        border-radius: 30px; }
-      .main-productos section .productos-frutos {
-        grid-area: frutos;
-        background-color: #B1D7B4;
-        margin: 1rem 2rem 4rem 6rem;
-        border-radius: 30px; }
-      .main-productos section .productos-harinas {
-        grid-area: harinas;
-        background-color: #B1D7B4;
-        margin: 1rem 2rem 4rem 6rem;
-        border-radius: 30px; }
-      .main-productos section .productos-hierbas {
-        grid-area: hierbas;
-        background-color: #B1D7B4;
-        margin: 1rem 2rem 4rem 6rem;
-        border-radius: 30px; }
-      .main-productos section img {
-        width: 40%;
-        height: 40%;
-        border-radius: 30px;
-        animation-name: foto-aparece;
-        animation-duration: 1s;
-        animation-iteration-count: initial; }
+    text-align: center;
+  }
+
+  .main-productos section {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "titulo titulo"
+      "suplementos frutos"
+      "harinas hierbas";
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .main-productos section h2 {
+    grid-area: titulo;
+    background-color: #b1d7b4;
+    padding: 0.5rem 12rem;
+    border-radius: 30px;
+  }
+
+  .main-productos section .productos-suplementos {
+    grid-area: suplementos;
+    margin: 1rem 2rem 4rem 6rem;
+  }
+
+  .main-productos section .productos-frutos {
+    grid-area: frutos;
+    margin: 1rem 2rem 4rem 6rem;
+  }
+
+  .main-productos section .productos-harinas {
+    grid-area: harinas;
+    margin: 1rem 2rem 4rem 6rem;
+  }
+
+  .main-productos section .productos-hierbas {
+    grid-area: hierbas;
+    margin: 1rem 2rem 4rem 6rem;
+  }
+
+  .main-productos section img {
+    width: 40%;
+    height: 40%;
+    border-radius: 30px;
+    animation-name: foto-aparece;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+  }
+
   /* mq encontranos */
   body {
-    background-color: #F7F6DC; }
+    background-color: #f7f6dc;
+  }
+
   .main-encontranos section {
-    text-align: center; }
-    .main-encontranos section div iframe {
-      outline-style: auto;
-      width: 36rem;
-      height: 36rem; }
+    text-align: center;
+  }
+
+  .main-encontranos section div iframe {
+    outline-style: auto;
+    width: 36rem;
+    height: 36rem;
+  }
+
   /* mq contacto */
-  body {
-    background-color: #F7F6DC; }
   .main-contacto {
     width: 100%;
-    text-align: center; }
-    .main-contacto section {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 5px; }
-      .main-contacto section img {
-        width: 25%;
-        animation-name: foto-aparece;
-        animation-duration: 1s;
-        animation-iteration-count: initial; }
-      .main-contacto section form {
-        outline-style: auto;
-        border-radius: 30px;
-        padding: 2rem; }
-        .main-contacto section form button {
-          outline-style: auto;
-          border-radius: 15px;
-          padding: 0.3rem; } }
+    text-align: center;
+  }
+
+  .main-contacto section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .main-contacto section img {
+    width: 25%;
+    animation-name: foto-aparece;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+  }
+
+  .main-contacto section form {
+    outline-style: auto;
+    border-radius: 30px;
+    padding: 2rem;
+  }
+
+  .main-contacto section form button {
+    outline-style: auto;
+    border-radius: 15px;
+    padding: 0.3rem;
+  }
+}
 
 /* media queries para menu hamburguesa */
 @media (min-width: 992px) {
@@ -392,51 +457,79 @@ body {
     justify-content: space-evenly;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+  }
+
   .nav-item:hover {
-    background-color: #B1D7B4;
+    background-color: #b1d7b4;
     transform: scale(0.9);
     box-shadow: 1px 1px 3px black;
     padding: 0.05rem;
-    border-radius: 3px; } }
+    border-radius: 3px;
+  }
+}
 
 /* @keyframes del proyecto */
 @keyframes foto-aparece {
   0% {
     opacity: 0;
-    transform: scale(0.5, 0.5); }
+    transform: scale(0.5, 0.5);
+  }
+
   100% {
     opacity: 1;
-    transform: scale(1, 1); } }
+    transform: scale(1, 1);
+  }
+}
 
 @keyframes animacion-footer {
   0% {
-    transform: translateY(0); }
+    transform: translateY(0);
+  }
+
   50% {
-    transform: translateY(4px); }
+    transform: translateY(4px);
+  }
+
   100% {
-    transform: translateY(0); } }
+    transform: translateY(0);
+  }
+}
 
 @keyframes animacion-footer-giro {
   0% {
-    rotate: 180deg; }
+    rotate: 180deg;
+  }
+
   50% {
-    rotate: -180deg; }
+    rotate: -180deg;
+  }
+
   100% {
-    rotate: 360deg; } }
+    rotate: 360deg;
+  }
+}
 
 @keyframes animacion-menu {
   0% {
     opacity: 0;
-    transform: translate(0, -300px); }
+    transform: translate(0, -300px);
+  }
+
   100% {
     opacity: 1;
-    transform: translate(0, 0); } }
+    transform: translate(0, 0);
+  }
+}
 
 @keyframes animacion-footer-aparece {
   0% {
     opacity: 0;
-    transform: translate(0, 300px); }
+    transform: translate(0, 300px);
+  }
+
   100% {
     opacity: 1;
-    transform: translate(0, 0); } }
+    transform: translate(0, 0);
+  }
+}

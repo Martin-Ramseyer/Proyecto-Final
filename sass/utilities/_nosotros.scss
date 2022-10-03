@@ -1,0 +1,26 @@
+@import "mixin";
+/* estilos de nosotros */
+
+
+.main-nosotros{
+    text-align: center;
+    margin-top: 2rem;
+    h2{
+        @include subtitulos(3.2rem 3rem, 0.3rem 0.5rem);
+    }
+    p{
+        margin: 3rem 5rem;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        img{
+            width: 70%;
+            height: 70%;
+            border-radius: 30px;
+        }
+    }
+}

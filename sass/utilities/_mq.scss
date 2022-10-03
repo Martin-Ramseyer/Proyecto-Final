@@ -1,0 +1,197 @@
+/* media queries mobile first */
+@media (min-width:768px) {
+    
+
+    /* estilos del nav */
+    .nav-item:hover{
+        background-color: #B1D7B4;
+        transform: scale(0.9);
+        box-shadow: 1px 1px 3px black;
+        padding: 0.05rem;
+        border-radius: 3px;
+    }
+    
+    
+    /* estilos del index */
+    .main-index{
+        img{
+        width: 32rem;
+        }
+        p{
+            font-size: 1.2rem;
+            margin: 1rem 25%;
+            animation-name: foto-aparece;
+            animation-duration: 2s;
+            animation-iteration-count: initial;
+        }
+    }
+    
+    /* mq nosotros */
+    //main
+    .main-nosotros{
+        p{
+            font-size: 1.2rem;
+            margin: 3rem 20%;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            img{
+                width: 40%;
+                height: 40%;
+            }
+        }
+    }
+    
+    /*mq productos*/
+    //main
+    .main-productos{
+        text-align: center;
+        section{
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+            grid-template-areas: 
+            "titulo titulo"
+            "suplementos frutos"
+            "harinas hierbas";
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            h2{
+                grid-area: titulo;
+                background-color: #B1D7B4;
+                padding: 0.5rem 12rem;
+                border-radius: 30px;
+            }
+            .productos-suplementos{
+                grid-area: suplementos;
+                margin: 1rem 2rem 4rem 6rem;
+            }
+            .productos-frutos{
+                grid-area: frutos;
+                margin: 1rem 2rem 4rem 6rem;
+            }
+            .productos-harinas{
+                grid-area: harinas;
+                margin: 1rem 2rem 4rem 6rem;
+            }
+            .productos-hierbas{
+                grid-area: hierbas;
+                margin: 1rem 2rem 4rem 6rem;
+            }
+            img{
+                width: 40%;
+                height: 40%;
+                border-radius: 30px;
+            }
+        }
+    }
+    
+    /* mq encontranos */
+    //main
+    
+    body{
+        background-color: $tercero;
+    }
+    .main-encontranos{
+        section{
+            text-align: center;
+            div{
+                iframe{
+                    outline-style: auto;
+                    width: 36rem;
+                    height: 36rem;
+                }
+            }
+        }
+    }
+    
+    /* mq contacto */
+    //main
+    
+    body{
+        background-color: $tercero;
+    }
+    
+    .main-contacto{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        margin: 8rem 2rem;
+        justify-content: space-evenly;
+        section{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            img{
+                width: 70%;
+            }
+            form{
+                padding: 0.5rem 0;
+                button{
+                    outline-style: auto;
+                    border-radius: 15px;
+                    padding: 0.3rem;
+                }
+            }
+        }
+    }
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* media queries para menu hamburguesa */
+    
+    @media (min-width: 992px) {
+    .menu{
+        padding: auto;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+    .nav-item:hover{
+        background-color: #B1D7B4;
+        transform: scale(0.9);
+        box-shadow: 1px 1px 3px black;
+        padding: 0.05rem;
+        border-radius: 3px;
+    }
+    }

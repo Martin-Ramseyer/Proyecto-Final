@@ -1,0 +1,54 @@
+/* @keyframes del proyecto */
+
+@keyframes foto-aparece {
+    0%{opacity: 0; transform: scale(0.5, 0.5);}
+    100%{opacity: 1;transform: scale(1, 1);}    
+}
+
+@keyframes animacion-footer {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(4px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes animacion-footer-giro{
+    0%{
+        rotate: (180deg);
+    }
+    50%{
+        rotate: (-180deg);
+    }
+    100%{
+        rotate: (360deg);
+    }
+}
+
+@keyframes animacion-menu {
+    0% {
+        opacity: 0;
+        transform: translate(0,-300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+        }
+}
+
+@keyframes animacion-footer-aparece {
+    0% {
+        opacity: 0;
+        transform: translate(0, 300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+        }
+}

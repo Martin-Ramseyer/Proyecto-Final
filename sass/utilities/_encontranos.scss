@@ -1,0 +1,24 @@
+@import "mixin";
+
+.main-encontranos{
+    section{
+        margin-top: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        h2{
+            @include subtitulos(3.2rem 3rem, 0.3rem 0.5rem);
+        }
+        div{
+            iframe{
+                outline-style: auto;
+                width: 100%;
+                height: 25rem;
+                border-radius: 50px;
+            }
+        }
+    }
+}

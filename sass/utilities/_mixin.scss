@@ -1,0 +1,7 @@
+@mixin subtitulos($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+    display: inline;
+    border-radius: 30px;
+    background-color: #b1d7b4;
+}

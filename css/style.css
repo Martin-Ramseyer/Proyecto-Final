@@ -11,20 +11,11 @@
   animation-iteration-count: initial; }
 
 header {
-  background-color: #7FB77E; }
-  header h1 {
-    text-align: center;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 0;
-    color: #212121; }
-  header h2 {
-    text-align: center;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #212121; }
+  background-color: #7FB77E;
+  text-align: center; }
+  header img {
+    margin-top: 5%;
+    width: 15%; }
 
 /* estilos del nav */
 .menu {
@@ -126,19 +117,19 @@ footer {
       background-color: #b1d7b4; }
     .main-productos section .productos-suplementos {
       background-color: #B1D7B4;
-      margin: 1rem 2rem 1rem 2rem;
+      margin: 1rem 2rem;
       border-radius: 30px; }
     .main-productos section .productos-frutos {
       background-color: #B1D7B4;
-      margin: 1rem 2rem 1rem 2rem;
+      margin: 1rem 2rem;
       border-radius: 30px; }
     .main-productos section .productos-harinas {
       background-color: #B1D7B4;
-      margin: 1rem 2rem 1rem 2rem;
+      margin: 1rem 2rem;
       border-radius: 30px; }
     .main-productos section .productos-hierbas {
       background-color: #B1D7B4;
-      margin: 1rem 2rem 1rem 2rem;
+      margin: 1rem 2rem;
       border-radius: 30px; }
     .main-productos section img {
       width: 40%;
@@ -201,6 +192,12 @@ footer {
     padding: 0.05rem;
     border-radius: 3px; }
   /* estilos del index */
+  header {
+    background-color: #7FB77E;
+    text-align: center; }
+    header img {
+      margin-top: 5%;
+      width: 15%; }
   .main-index img {
     width: 32rem; }
   .main-index p {
@@ -240,19 +237,23 @@ footer {
         border-radius: 30px; }
       .main-productos section .productos-suplementos {
         grid-area: suplementos;
-        margin: 1rem 2rem 4rem 6rem; }
+        margin: 0.5rem 1rem;
+        width: 20rem; }
       .main-productos section .productos-frutos {
         grid-area: frutos;
-        margin: 1rem 2rem 4rem 6rem; }
+        margin: 0.5rem 1rem;
+        width: 20rem; }
       .main-productos section .productos-harinas {
         grid-area: harinas;
-        margin: 1rem 2rem 4rem 6rem; }
+        margin: 0.5rem 1rem;
+        width: 20rem; }
       .main-productos section .productos-hierbas {
         grid-area: hierbas;
-        margin: 1rem 2rem 4rem 6rem; }
+        margin: 0.5rem 1rem;
+        width: 20rem; }
       .main-productos section img {
         width: 40%;
-        height: 40%;
+        height: 30%;
         border-radius: 30px; }
   /* mq encontranos */
   body {
@@ -302,7 +303,26 @@ footer {
     transform: scale(0.9);
     box-shadow: 1px 1px 3px black;
     padding: 0.05rem;
-    border-radius: 3px; } }
+    border-radius: 3px; }
+  header {
+    background-color: #7FB77E;
+    text-align: center; }
+    header img {
+      margin-top: 0;
+      width: 12%; }
+  /*mq productos*/
+  .main-productos section .productos-suplementos {
+    margin: 1rem 2rem;
+    width: 28rem; }
+  .main-productos section .productos-frutos {
+    margin: 1rem 2rem;
+    width: 28rem; }
+  .main-productos section .productos-harinas {
+    margin: 1rem 2rem;
+    width: 28rem; }
+  .main-productos section .productos-hierbas {
+    margin: 1rem 2rem;
+    width: 28rem; } }
 
 /* @keyframes del proyecto */
 @keyframes foto-aparece {

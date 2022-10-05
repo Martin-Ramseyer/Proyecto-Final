@@ -13,6 +13,16 @@
     
     
     /* estilos del index */
+
+    header{
+        background-color: #7FB77E;
+        text-align: center;
+        img{
+            margin-top: 5%;
+            width: 15%;
+        }
+    }
+
     .main-index{
         img{
         width: 32rem;
@@ -69,23 +79,27 @@
             }
             .productos-suplementos{
                 grid-area: suplementos;
-                margin: 1rem 2rem 4rem 6rem;
+                margin: 0.5rem 1rem;
+                width: 20rem;
             }
             .productos-frutos{
                 grid-area: frutos;
-                margin: 1rem 2rem 4rem 6rem;
+                margin: 0.5rem 1rem;
+                width: 20rem;
             }
             .productos-harinas{
                 grid-area: harinas;
-                margin: 1rem 2rem 4rem 6rem;
+                margin: 0.5rem 1rem;
+                width: 20rem;
             }
             .productos-hierbas{
                 grid-area: hierbas;
-                margin: 1rem 2rem 4rem 6rem;
+                margin: 0.5rem 1rem;
+                width: 20rem;
             }
             img{
                 width: 40%;
-                height: 40%;
+                height: 30%;
                 border-radius: 30px;
             }
         }
@@ -193,5 +207,35 @@
         box-shadow: 1px 1px 3px black;
         padding: 0.05rem;
         border-radius: 3px;
+    }
+    header{
+        background-color: #7FB77E;
+        text-align: center;
+        img{
+            margin-top: 0;
+            width: 12%;
+        }
+    }
+    /*mq productos*/
+    //main
+    .main-productos{
+        section{
+            .productos-suplementos{
+                margin: 1rem 2rem;
+                width: 28rem;
+            }
+            .productos-frutos{
+                margin: 1rem 2rem;
+                width: 28rem;
+            }
+            .productos-harinas{
+                margin: 1rem 2rem;
+                width: 28rem;
+            }
+            .productos-hierbas{
+                margin: 1rem 2rem;
+                width: 28rem;
+            }
+        }
     }
     }

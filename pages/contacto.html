@@ -51,47 +51,33 @@
             <!-- section logo y frase de emprendimiento -->
             <section>
                 <a href="../index.html"><img src="../img/logo-02.png" alt="Logo del emprendimiento"></a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, magnam.</p>
+                <p>Manantial es la fuente de salud por excelencia de la ciudad de Avellaneda.</p>
             </section>
 
             <!--section contacto -->
-            <section>
+            <section class="formulario-contacto">
                 <form action="#">
                     <h2>Contacto</h2>
-                    <legend>Contactame por aquí</legend>
-                    <div>
-                        <label for="#">Nombre</label>
-                        <input type="text" placeholder="Tu nombre">
-                    </div>
-
-                    <div>
-                        <label for="#">Telefono</label>
-                        <input type="tel" placeholder="Tu teléfono">
-                    </div>
-
-                    <div>
-                        <label for="#">Correo</label>
-                        <input type="email" placeholder="Tu email">
-                    </div>
-
-                    <div>
-                        <label for="#">Mensaje</label>
-                        <textarea cols="25" rows="2"></textarea>
-                    </div>
-                    <button>Enviar</button>
+                    <legend>Dejanos tu contacto por aquí</legend>
+                    <input class="contacto" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+                    <input class="contacto" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+                    <input class="contacto" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                    <input class="contacto" type="tel" name="numero" id="numero" placeholder="Ingrese su Número">
+                    <p><input type="checkbox"> Estoy de acuerdo con recibir un llamado de Manantial<p>
+                    <input class="contacto-boton" type="submit" value="Enviar">
                 </form>
             </section>
         </main>
 
         <!-- pie de pagina -->
-        <footer class="footer">
+        <footer>
             <h3>Buscanos en las redes</h3>
             <div>
                 <div class="animacion-giro">
-                <img src="../img/logo-facebook.png" alt="Logo de facebook">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../img/logo-facebook.png" alt="Logo de facebook"></a>
                 </div>
                 <div class="animacion-giro">
-                <img src="../img/logo-instagram.png" alt="Logo de instagram">
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/logo-instagram.png" alt="Logo de instagram"></a>
                 </div>
             </div>
             <p>Todos los derechos reservados.</p>

@@ -61,7 +61,7 @@ footer {
     flex-direction: row; }
   footer img {
     margin-bottom: 0.5rem;
-    filter: drop-shadow(1px 4px 3px);
+    filter: drop-shadow(1px 4px 3px black);
     animation-name: animacion-footer;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -85,8 +85,8 @@ footer {
     margin: 3.2rem 3rem;
     padding: 0.3rem 0.5rem;
     display: inline;
-    border-radius: 30px;
-    background-color: #b1d7b4; }
+    background-color: #b1d7b4;
+    border-radius: 5px; }
   .main-nosotros p {
     margin: 3rem 5rem; }
   .main-nosotros div {
@@ -113,8 +113,8 @@ footer {
       margin: 3.2rem 5rem;
       padding: 0.3rem 0.2rem;
       display: inline;
-      border-radius: 30px;
-      background-color: #b1d7b4; }
+      background-color: #b1d7b4;
+      border-radius: 5px; }
     .main-productos section .productos-suplementos {
       background-color: #B1D7B4;
       margin: 1rem 2rem;
@@ -135,6 +135,10 @@ footer {
       width: 40%;
       height: 40%;
       border-radius: 15px; }
+    .main-productos section p {
+      font-size: 0.7rem;
+      margin: 0 1rem;
+      padding: 0.2rem; }
 
 .main-encontranos section {
   margin-top: 1rem;
@@ -148,41 +152,127 @@ footer {
     margin: 3.2rem 3rem;
     padding: 0.3rem 0.5rem;
     display: inline;
-    border-radius: 30px;
-    background-color: #b1d7b4; }
+    background-color: #b1d7b4;
+    border-radius: 5px; }
   .main-encontranos section div iframe {
-    outline-style: auto;
     width: 100%;
     height: 25rem;
     border-radius: 50px; }
 
 .main-contacto {
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
   .main-contacto section {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px; }
+    gap: 10px; }
     .main-contacto section h2 {
       margin: 3.2rem 3rem;
       padding: 0.3rem 0.5rem;
       display: inline;
-      border-radius: 30px;
-      background-color: #b1d7b4; }
+      background-color: #b1d7b4;
+      border-radius: 5px; }
     .main-contacto section img {
       width: 60%; }
-    .main-contacto section form {
-      padding: 1.5rem; }
-      .main-contacto section form button {
-        outline-style: auto;
-        border-radius: 15px;
-        padding: 0.3rem;
-        background-color: #B1D7B4; }
+  .main-contacto .formulario-contacto {
+    max-width: 16rem;
+    background-color: #7FB77E;
+    padding: 2rem;
+    margin: 6rem auto auto auto;
+    border-radius: 0.4rem; }
+    .main-contacto .formulario-contacto legend {
+      margin: 0.8rem 0; }
+  .main-contacto .contacto {
+    width: 100%;
+    background-color: #B1D7B4;
+    padding: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 0.3rem;
+    border: 1px solid #ffffff;
+    font-family: 'calibri';
+    font-size: 1rem;
+    color: #212121; }
+  .main-contacto .contacto-boton {
+    width: 60%;
+    border-radius: 4px;
+    background-color: #B1D7B4;
+    border: none;
+    padding: 0.8rem;
+    color: #212121;
+    margin: 1rem 0;
+    font-size: 1rem; }
 
-/* media queries mobile first */
+/* @keyframes del proyecto */
+@keyframes foto-aparece {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5); }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1); } }
+
+@keyframes animacion-footer {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(4px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes animacion-footer-giro {
+  0% {
+    rotate: 180deg; }
+  50% {
+    rotate: -180deg; }
+  100% {
+    rotate: 360deg; } }
+
+@keyframes animacion-menu {
+  0% {
+    opacity: 0;
+    transform: translate(0, -300px); }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0); } }
+
+@keyframes animacion-footer-aparece {
+  0% {
+    opacity: 0;
+    transform: translate(0, 300px); }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0); } }
+
+/* media queries 480px */
+@media (min-width: 480px) {
+  /* mq productos */
+  .main-productos section p {
+    font-size: 0.9rem; }
+  /* mq contacto */
+  .main-contacto .formulario-contacto {
+    max-width: 26rem;
+    background-color: #7FB77E;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 6rem;
+    border-radius: 0.4rem; }
+  .main-contacto .contacto {
+    width: 100%;
+    background-color: #B1D7B4;
+    padding: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 0.3rem;
+    border: 1px solid #ffffff;
+    font-family: 'calibri';
+    font-size: 1rem;
+    color: #212121; } }
+
+/* media queries 768px */
 @media (min-width: 768px) {
   /* estilos del nav */
   .nav-item:hover {
@@ -234,7 +324,7 @@ footer {
         grid-area: titulo;
         background-color: #B1D7B4;
         padding: 0.5rem 12rem;
-        border-radius: 30px; }
+        border-radius: 5px; }
       .main-productos section .productos-suplementos {
         grid-area: suplementos;
         margin: 0.5rem 1rem;
@@ -255,41 +345,52 @@ footer {
         width: 40%;
         height: 30%;
         border-radius: 30px; }
+      .main-productos section p {
+        margin: 0 2rem;
+        padding: 0.5rem;
+        font-size: 1rem; }
   /* mq encontranos */
   body {
     background-color: #F7F6DC; }
   .main-encontranos section {
     text-align: center; }
     .main-encontranos section div iframe {
-      outline-style: auto;
       width: 36rem;
       height: 36rem; }
   /* mq contacto */
   body {
     background-color: #F7F6DC; }
   .main-contacto {
-    width: 100%;
     text-align: center;
     display: flex;
-    margin: 8rem 2rem;
+    margin: 8rem 0;
     justify-content: space-evenly; }
     .main-contacto section {
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      gap: 2px; }
+      align-items: center; }
       .main-contacto section img {
-        width: 70%; }
-      .main-contacto section form {
-        padding: 0.5rem 0; }
-        .main-contacto section form button {
-          outline-style: auto;
-          border-radius: 15px;
-          padding: 0.3rem; } }
+        width: 60%; }
+    .main-contacto .formulario-contacto {
+      max-width: 32rem;
+      background-color: #7FB77E;
+      padding: 2rem;
+      margin: 6rem auto auto auto;
+      border-radius: 0.4rem; }
+    .main-contacto .contacto {
+      width: 100%;
+      background-color: #B1D7B4;
+      padding: 0.8rem;
+      border-radius: 4px;
+      margin-bottom: 0.3rem;
+      border: 1px solid #ffffff;
+      font-family: 'calibri';
+      font-size: 1rem;
+      color: #212121; } }
 
-/* media queries para menu hamburguesa */
+/* media queries 992px */
 @media (min-width: 992px) {
   .menu {
     padding: auto;
@@ -322,45 +423,34 @@ footer {
     width: 28rem; }
   .main-productos section .productos-hierbas {
     margin: 1rem 2rem;
-    width: 28rem; } }
-
-/* @keyframes del proyecto */
-@keyframes foto-aparece {
-  0% {
-    opacity: 0;
-    transform: scale(0.5, 0.5); }
-  100% {
-    opacity: 1;
-    transform: scale(1, 1); } }
-
-@keyframes animacion-footer {
-  0% {
-    transform: translateY(0); }
-  50% {
-    transform: translateY(4px); }
-  100% {
-    transform: translateY(0); } }
-
-@keyframes animacion-footer-giro {
-  0% {
-    rotate: 180deg; }
-  50% {
-    rotate: -180deg; }
-  100% {
-    rotate: 360deg; } }
-
-@keyframes animacion-menu {
-  0% {
-    opacity: 0;
-    transform: translate(0, -300px); }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0); } }
-
-@keyframes animacion-footer-aparece {
-  0% {
-    opacity: 0;
-    transform: translate(0, 300px); }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0); } }
+    width: 28rem; }
+  /* mq contacto */
+  .main-contacto {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 8rem 0; }
+    .main-contacto section {
+      display: grid;
+      text-align: center;
+      justify-content: center;
+      align-items: center; }
+      .main-contacto section img {
+        width: 60%; }
+    .main-contacto .formulario-contacto {
+      display: grid;
+      max-width: 32rem;
+      background-color: #7FB77E;
+      padding: 2rem;
+      margin: 6rem auto auto auto;
+      border-radius: 0.4rem; }
+    .main-contacto .contacto {
+      width: 100%;
+      background-color: #B1D7B4;
+      padding: 0.8rem;
+      border-radius: 4px;
+      margin-bottom: 0.3rem;
+      border: 1px solid #ffffff;
+      font-family: 'calibri';
+      font-size: 1rem;
+      color: #212121; } }

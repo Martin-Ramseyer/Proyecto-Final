@@ -3,8 +3,16 @@
     /* mq productos */
     .main-productos{
         section{
+            h2{
+                @include subtitulos(3.2rem 10rem, 0.3rem 0.2rem);
+            }
             p{
                 font-size: 0.9rem;
+            }
+            img{
+                width: 8rem;
+                height: 6rem;
+                border-radius: 15px;
             }
         }
     }
@@ -34,6 +42,7 @@
 
 /* media queries 768px */
 @media (min-width:768px) {
+    
     
 
     /* estilos del nav */
@@ -132,8 +141,8 @@
                 width: 20rem;
             }
             img{
-                width: 40%;
-                height: 30%;
+                width: 12rem;
+                height: 10rem;
                 border-radius: 30px;
             }
             p{

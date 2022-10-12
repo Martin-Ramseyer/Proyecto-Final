@@ -26,7 +26,11 @@ header {
 
 /* estilos del body */
 body {
-  background-color: #F7F6DC; }
+  background: #f0efd0;
+  background: -moz-radial-gradient(circle, #f0efd0 22%, #f7f6dc 50%, #e6e2bb 80%);
+  background: -webkit-radial-gradient(circle, #f0efd0 22%, #f7f6dc 50%, #e6e2bb 80%);
+  background: radial-gradient(circle, #f0efd0 22%, #f7f6dc 50%, #e6e2bb 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0efd0",endColorstr="#e6e2bb",GradientType=1); }
 
 /* estilos del main */
 .main-index {
@@ -86,7 +90,9 @@ footer {
     padding: 0.3rem 0.5rem;
     display: inline;
     background-color: #b1d7b4;
-    border-radius: 5px; }
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600; }
   .main-nosotros p {
     margin: 3rem 5rem; }
   .main-nosotros div {
@@ -108,13 +114,16 @@ footer {
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    gap: 5px; }
+    gap: 5px;
+    font-family: Arial, Helvetica, sans-serif; }
     .main-productos section h2 {
-      margin: 3.2rem 5rem;
+      margin: 3.2rem 6rem;
       padding: 0.3rem 0.2rem;
       display: inline;
       background-color: #b1d7b4;
-      border-radius: 5px; }
+      border-radius: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600; }
     .main-productos section .productos-suplementos {
       background-color: #B1D7B4;
       margin: 1rem 2rem;
@@ -132,8 +141,8 @@ footer {
       margin: 1rem 2rem;
       border-radius: 30px; }
     .main-productos section img {
-      width: 40%;
-      height: 40%;
+      width: 7rem;
+      height: 5rem;
       border-radius: 15px; }
     .main-productos section p {
       font-size: 0.7rem;
@@ -147,23 +156,30 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px; }
+  gap: 5px;
+  font-family: Arial, Helvetica, sans-serif; }
   .main-encontranos section h2 {
     margin: 3.2rem 3rem;
     padding: 0.3rem 0.5rem;
     display: inline;
     background-color: #b1d7b4;
-    border-radius: 5px; }
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600; }
   .main-encontranos section div iframe {
     width: 100%;
     height: 25rem;
-    border-radius: 50px; }
+    border-radius: 50px;
+    animation-name: foto-aparece;
+    animation-duration: 3s;
+    animation-iteration-count: initial; }
 
 .main-contacto {
   text-align: center;
   width: 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif; }
   .main-contacto section {
     text-align: center;
     display: flex;
@@ -176,7 +192,9 @@ footer {
       padding: 0.3rem 0.5rem;
       display: inline;
       background-color: #b1d7b4;
-      border-radius: 5px; }
+      border-radius: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600; }
     .main-contacto section img {
       width: 60%; }
   .main-contacto .formulario-contacto {
@@ -251,8 +269,20 @@ footer {
 /* media queries 480px */
 @media (min-width: 480px) {
   /* mq productos */
+  .main-productos section h2 {
+    margin: 3.2rem 10rem;
+    padding: 0.3rem 0.2rem;
+    display: inline;
+    background-color: #b1d7b4;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600; }
   .main-productos section p {
     font-size: 0.9rem; }
+  .main-productos section img {
+    width: 8rem;
+    height: 6rem;
+    border-radius: 15px; }
   /* mq contacto */
   .main-contacto .formulario-contacto {
     max-width: 26rem;
@@ -342,8 +372,8 @@ footer {
         margin: 0.5rem 1rem;
         width: 20rem; }
       .main-productos section img {
-        width: 40%;
-        height: 30%;
+        width: 12rem;
+        height: 10rem;
         border-radius: 30px; }
       .main-productos section p {
         margin: 0 2rem;

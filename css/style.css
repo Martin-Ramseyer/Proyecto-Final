@@ -11,7 +11,7 @@ header {
   text-align: center; }
   header img {
     margin-top: 5%;
-    width: 15%; }
+    width: 12rem; }
 
 /* estilos del nav */
 .menu {
@@ -279,6 +279,8 @@ footer {
 
 /* media queries 480px */
 @media (min-width: 480px) {
+  header img {
+    width: 16rem; }
   /* mq productos */
   .main-productos section h1 {
     margin: 3.2rem 10rem;
@@ -316,12 +318,9 @@ footer {
 /* media queries 768px */
 @media (min-width: 768px) {
   /* estilos del index */
-  header {
-    background-color: #7FB77E;
-    text-align: center; }
-    header img {
-      margin-top: 5%;
-      width: 15%; }
+  header img {
+    margin-top: 5px;
+    width: 18rem; }
   .main-index img {
     width: 32rem; }
   .main-index p {
@@ -426,6 +425,9 @@ footer {
 
 /* media queries 992px */
 @media (min-width: 992px) {
+  header img {
+    margin-top: 0;
+    width: 20rem; }
   .menu {
     padding: auto;
     display: flex;
@@ -439,12 +441,6 @@ footer {
     box-shadow: 1px 1px 3px black;
     border-radius: 3px;
     animation: vibrate 0.2s linear both; }
-  header {
-    background-color: #7FB77E;
-    text-align: center; }
-    header img {
-      margin-top: 0;
-      width: 12%; }
   /*mq productos*/
   .main-productos section .productos-suplementos {
     margin: 1rem 2rem;

@@ -1,5 +1,10 @@
 /* media queries 480px */
 @media (min-width: 480px) {
+    header{
+        img{
+            width: 16rem;
+        }
+    }
     /* mq productos */
     .main-productos{
         section{
@@ -47,11 +52,9 @@
     /* estilos del index */
 
     header{
-        background-color: #7FB77E;
-        text-align: center;
         img{
-            margin-top: 5%;
-            width: 15%;
+            margin-top: 5px;
+            width: 18rem;
         }
     }
 
@@ -211,6 +214,12 @@
     /* media queries 992px */
     
     @media (min-width: 992px) {
+    header{
+        img{
+            margin-top: 0;
+            width: 20rem;
+        }
+    }
     .menu{
         padding: auto;
         display: flex;
@@ -225,14 +234,6 @@
         box-shadow: 1px 1px 3px black;
         border-radius: 3px;
         animation:vibrate 0.2s linear both
-    }
-    header{
-        background-color: #7FB77E;
-        text-align: center;
-        img{
-            margin-top: 0;
-            width: 12%;
-        }
     }
     /*mq productos*/
     //main

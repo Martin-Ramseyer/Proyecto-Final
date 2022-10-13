@@ -10,29 +10,27 @@
         justify-content: center;
         justify-items: center;
         gap: 5px;
-        font-family: Arial, Helvetica, sans-serif;
-        h2{
-            @include subtitulos(3.2rem 6rem, 0.3rem 0.2rem);
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 500;
+        h1{
+            @include subtitulos(3.2rem 4rem, 0.7rem 0.9rem);
         }
-        .productos-suplementos{
-            background-color: #B1D7B4;
-            margin: 1rem 2rem;
-            border-radius: 30px;
-        }
-        .productos-frutos{
-            background-color: #B1D7B4;
-            margin: 1rem 2rem;
-            border-radius: 30px;
-        }
-        .productos-harinas{
-            background-color: #B1D7B4;
-            margin: 1rem 2rem;
-            border-radius: 30px;
-        }
+        .productos-suplementos,
+        .productos-frutos,
+        .productos-harinas,
         .productos-hierbas{
             background-color: #B1D7B4;
             margin: 1rem 2rem;
             border-radius: 30px;
+        }
+        .productos-harinas:hover,
+        .productos-frutos:hover,
+        .productos-suplementos:hover,
+        .productos-hierbas:hover{
+            -webkit-box-shadow: 2px 3px 9px 0px rgba(0,0,0,0.71);
+            -moz-box-shadow: 2px 3px 9px 0px rgba(0,0,0,0.71);
+            box-shadow: 2px 3px 9px 0px rgba(0,0,0,0.71);
+            transform: scaleX(1.01);
         }
         img{
             width: 7rem;
@@ -40,7 +38,7 @@
             border-radius: 15px;
         }
         p{
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             margin: 0 1rem;
             padding: 0.2rem;
         }

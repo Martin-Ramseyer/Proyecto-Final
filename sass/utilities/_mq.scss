@@ -3,11 +3,11 @@
     /* mq productos */
     .main-productos{
         section{
-            h2{
+            h1{
                 @include subtitulos(3.2rem 10rem, 0.3rem 0.2rem);
             }
             p{
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
             img{
                 width: 8rem;
@@ -42,17 +42,6 @@
 
 /* media queries 768px */
 @media (min-width:768px) {
-    
-    
-
-    /* estilos del nav */
-    .nav-item:hover{
-        background-color: #B1D7B4;
-        transform: scale(0.9);
-        box-shadow: 1px 1px 3px black;
-        padding: 0.05rem;
-        border-radius: 3px;
-    }
     
     
     /* estilos del index */
@@ -114,10 +103,10 @@
             justify-content: center;
             align-items: center;
             gap: 5px;
-            h2{
+            h1{
                 grid-area: titulo;
                 background-color: #B1D7B4;
-                padding: 0.5rem 12rem;
+                padding: 0.5rem 1rem;
                 border-radius: 5px;
             }
             .productos-suplementos{
@@ -227,15 +216,15 @@
         display: flex;
         justify-content: space-evenly;
         font-size: 1rem;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Titillium Web', sans-serif;
         font-weight: 600;
     }
+    .nav-item-activado,
     .nav-item:hover{
         background-color: #B1D7B4;
-        transform: scale(0.9);
         box-shadow: 1px 1px 3px black;
-        padding: 0.05rem;
         border-radius: 3px;
+        animation:vibrate 0.2s linear both
     }
     header{
         background-color: #7FB77E;

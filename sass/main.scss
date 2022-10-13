@@ -8,13 +8,17 @@
 //paleta de colores
 //variables
 
+
+
 $blanco: #ffffff;
 $oscuro: #212121;
 $primero: #7FB77E;
 $segundo: #B1D7B4;
 $tercero: #F7F6DC;
 
+
 //@import de estilos 
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @import "utilities/index";
 @import "utilities/nosotros";
 @import "utilities/productos";

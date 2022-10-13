@@ -1,4 +1,5 @@
 /* reset */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +17,7 @@ header {
 .menu {
   padding: auto;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 600; }
 
 /* estilos del body */
@@ -30,7 +31,8 @@ body {
 /* estilos del main */
 .main-index {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 500;
   font-size: 0.9rem; }
   .main-index img {
     width: 60%;
@@ -54,7 +56,9 @@ footer {
   margin-bottom: 0;
   animation-name: animacion-footer-aparece;
   animation-duration: 2.5s;
-  animation-iteration-count: initial; }
+  animation-iteration-count: initial;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 500; }
   footer div {
     display: flex;
     flex-direction: row; }
@@ -71,7 +75,8 @@ footer {
     animation-duration: 1.2s;
     animation-iteration-count: initial; }
   footer p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
     font-size: 0.9rem;
     color: #212121;
     margin-bottom: 0; }
@@ -80,16 +85,18 @@ footer {
 .main-nosotros {
   text-align: center;
   margin-top: 2rem; }
-  .main-nosotros h2 {
+  .main-nosotros h1 {
     margin: 3.2rem 3rem;
-    padding: 0.3rem 0.5rem;
+    padding: 0.5rem 0.7rem;
     display: inline;
     background-color: #b1d7b4;
     border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-weight: 600; }
   .main-nosotros p {
-    margin: 3rem 5rem; }
+    margin: 3rem 5rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500; }
   .main-nosotros div {
     display: flex;
     flex-direction: column;
@@ -110,37 +117,37 @@ footer {
     justify-content: center;
     justify-items: center;
     gap: 5px;
-    font-family: Arial, Helvetica, sans-serif; }
-    .main-productos section h2 {
-      margin: 3.2rem 6rem;
-      padding: 0.3rem 0.2rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500; }
+    .main-productos section h1 {
+      margin: 3.2rem 4rem;
+      padding: 0.7rem 0.9rem;
       display: inline;
       background-color: #b1d7b4;
       border-radius: 5px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Titillium Web', sans-serif;
       font-weight: 600; }
-    .main-productos section .productos-suplementos {
-      background-color: #B1D7B4;
-      margin: 1rem 2rem;
-      border-radius: 30px; }
-    .main-productos section .productos-frutos {
-      background-color: #B1D7B4;
-      margin: 1rem 2rem;
-      border-radius: 30px; }
-    .main-productos section .productos-harinas {
-      background-color: #B1D7B4;
-      margin: 1rem 2rem;
-      border-radius: 30px; }
+    .main-productos section .productos-suplementos,
+    .main-productos section .productos-frutos,
+    .main-productos section .productos-harinas,
     .main-productos section .productos-hierbas {
       background-color: #B1D7B4;
       margin: 1rem 2rem;
       border-radius: 30px; }
+    .main-productos section .productos-harinas:hover,
+    .main-productos section .productos-frutos:hover,
+    .main-productos section .productos-suplementos:hover,
+    .main-productos section .productos-hierbas:hover {
+      -webkit-box-shadow: 2px 3px 9px 0px rgba(0, 0, 0, 0.71);
+      -moz-box-shadow: 2px 3px 9px 0px rgba(0, 0, 0, 0.71);
+      box-shadow: 2px 3px 9px 0px rgba(0, 0, 0, 0.71);
+      transform: scaleX(1.01); }
     .main-productos section img {
       width: 7rem;
       height: 5rem;
       border-radius: 15px; }
     .main-productos section p {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       margin: 0 1rem;
       padding: 0.2rem; }
 
@@ -152,14 +159,15 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  font-family: Arial, Helvetica, sans-serif; }
-  .main-encontranos section h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 500; }
+  .main-encontranos section h1 {
     margin: 3.2rem 3rem;
-    padding: 0.3rem 0.5rem;
+    padding: 0.7rem 0.9rem;
     display: inline;
     background-color: #b1d7b4;
     border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-weight: 600; }
   .main-encontranos section div iframe {
     width: 100%;
@@ -167,14 +175,18 @@ footer {
     border-radius: 50px;
     animation-name: foto-aparece;
     animation-duration: 3s;
-    animation-iteration-count: initial; }
+    animation-iteration-count: initial;
+    -webkit-box-shadow: 2px 3px 9px 0px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 2px 3px 9px 0px rgba(0, 0, 0, 0.71);
+    box-shadow: 2px 3px 9px 0px rgba(0, 0, 0, 0.71); }
 
 .main-contacto {
   text-align: center;
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 500; }
   .main-contacto section {
     text-align: center;
     display: flex;
@@ -182,13 +194,13 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 10px; }
-    .main-contacto section h2 {
+    .main-contacto section h1 {
       margin: 3.2rem 3rem;
       padding: 0.3rem 0.5rem;
       display: inline;
       background-color: #b1d7b4;
       border-radius: 5px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Titillium Web', sans-serif;
       font-weight: 600; }
     .main-contacto section img {
       width: 60%; }
@@ -251,19 +263,33 @@ footer {
   100% {
     opacity: 1; } }
 
+@keyframes vibrate {
+  0% {
+    transform: translate(0); }
+  20% {
+    transform: translate(-1px, 1px); }
+  40% {
+    transform: translate(-1px, -1px); }
+  60% {
+    transform: translate(1px, 1px); }
+  80% {
+    transform: translate(1px, -1px); }
+  100% {
+    transform: translate(0); } }
+
 /* media queries 480px */
 @media (min-width: 480px) {
   /* mq productos */
-  .main-productos section h2 {
+  .main-productos section h1 {
     margin: 3.2rem 10rem;
     padding: 0.3rem 0.2rem;
     display: inline;
     background-color: #b1d7b4;
     border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-weight: 600; }
   .main-productos section p {
-    font-size: 0.9rem; }
+    font-size: 1rem; }
   .main-productos section img {
     width: 8rem;
     height: 6rem;
@@ -289,13 +315,6 @@ footer {
 
 /* media queries 768px */
 @media (min-width: 768px) {
-  /* estilos del nav */
-  .nav-item:hover {
-    background-color: #B1D7B4;
-    transform: scale(0.9);
-    box-shadow: 1px 1px 3px black;
-    padding: 0.05rem;
-    border-radius: 3px; }
   /* estilos del index */
   header {
     background-color: #7FB77E;
@@ -335,10 +354,10 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 5px; }
-      .main-productos section h2 {
+      .main-productos section h1 {
         grid-area: titulo;
         background-color: #B1D7B4;
-        padding: 0.5rem 12rem;
+        padding: 0.5rem 1rem;
         border-radius: 5px; }
       .main-productos section .productos-suplementos {
         grid-area: suplementos;
@@ -412,14 +431,14 @@ footer {
     display: flex;
     justify-content: space-evenly;
     font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-weight: 600; }
+  .nav-item-activado,
   .nav-item:hover {
     background-color: #B1D7B4;
-    transform: scale(0.9);
     box-shadow: 1px 1px 3px black;
-    padding: 0.05rem;
-    border-radius: 3px; }
+    border-radius: 3px;
+    animation: vibrate 0.2s linear both; }
   header {
     background-color: #7FB77E;
     text-align: center; }
